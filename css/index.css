@@ -1,0 +1,385 @@
+:root{
+    --main-color:#069d9d;
+    --main-color-hover:hsl(180, 87%, 20%);
+    --chakra-fonts-body: 'Inter', sans-serif;
+}
+body{
+    font-family: var(--chakra-fonts-body);
+    font-weight: 500;
+    background-image: url(../assets/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+
+}
+input::placeholder{
+   opacity: 0.5 !important;
+    
+}
+
+.SignIn-form{
+    background-color: rgba(128, 128, 128 ,0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:white 1px solid;
+
+    button{
+        background-color: var(--main-color);
+        color:white;
+        margin-top: 8px;
+       
+    }
+    button:hover{
+        background-color: var(--main-color-hover);
+        
+    }
+}
+
+.maincolor{
+    background-color: var(--main-color-hover);
+}
+/*====== scroll box======*/
+a {
+    display: inline-block;
+    width: 50px;
+    text-decoration: none;
+  }
+
+  .scroll-container {
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: black;
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .scroll-container h6 {
+    color: var(--main-color);
+    font-weight: 900;
+  }
+ 
+
+/*====custom scrollbar====*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px; 
+    height: 50%;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-font{
+    
+    font-size: 14px;
+    font-weight: 600;
+}
+.font-big{
+    font-size: calc(2rem + 5vw);
+    font-weight: 700;
+}
+.HeadLetter{
+font-size: 5rem;
+font-weight: 800;
+opacity: 0.1;
+position: absolute;
+bottom: -20%;
+}
+.maincolor{
+background-color: var(--main-color);
+}
+.btn-custom{
+    background-color: var(--main-color);
+    opacity: 0.8;
+    color: white;
+}
+ .btn-custom:hover{
+    background-color: var(--main-color);
+    color: white;
+    opacity: 1;
+}
+/* nav bar */
+nav img{
+width: 100px;
+}
+
+nav .start-side-border::before{
+ content: "";
+ top: 50%;
+ transform: translate(-50%, -50%);
+ width: 1px;
+ height: 65px;
+ position: absolute;   
+ background-color:rgba(0, 0, 0, 0.3);
+}
+nav .social-media i{
+color: black;
+}
+nav .social-media i:hover{
+color: rgba(0, 0, 0, 0.6);
+}
+
+/* start of header */
+
+.home-over-layer{  /* image overlaye */
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+  
+
+
+header .btn-custom{
+    background-color: var(--main-color);
+    opacity: 0.8;
+    color: white;
+}
+header .btn-custom:hover{
+    background-color: var(--main-color);
+    color: white;
+    opacity: 1;
+}
+header .slider-arrows{
+bottom: 45%;
+}
+/* who we are */
+section .typing::after{
+content: "";
+color: #00D5EE;
+font-weight: 500;
+animation-name:typing ;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+@keyframes typing{
+    1%{content:"";}
+    2%{content:"";}
+    3%{content:"W";}
+    4%{content:"We";}
+    5%{content:"Web";}
+    6%{content:"Webs";}
+    7%{content:"Websi";}
+    8%{content:"Websit";}
+    9%{content:"Website";}
+    10%{content:"Websites";}
+    11%{content:"Website";}
+    12%{content:"Websit";}
+    13%{content:"Websi";}
+    14%{content:"Webs";}
+    15%{content:"Web";}
+    16%{content:"We";}
+    17%{content:"W";}
+    18%{content:"";}
+    19%{content:"";}
+    21%{content:"";}
+    22%{content:"S";}
+    23%{content:"So";}
+    24%{content:"Sof";}
+    25%{content:"Soft";}
+    26%{content:"Softw";}
+    27%{content:"Softwa";}
+    28%{content:"Softwar";}
+    29%{content:"Software";}
+    31%{content:"Softwares";}
+    32%{content:"Software";}
+    33%{content:"Softwar";}
+    34%{content:"Softwa";}
+    35%{content:"Softw";}
+    36%{content:"Soft";}
+    37%{content:"Sof";}
+    38%{content:"So";}
+    39%{content:"S";}
+    40%{content:"";}
+    45%{content:"";}
+    46%{content:"";}
+    47%{content:"A";}
+    48%{content:"Ap";}
+    60%{content:"App";}
+    65%{content:"Ap";}
+    70%{content:"A";}
+    80%{content:"";}
+}
+/* start of team section */
+#team .team-member .team-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+    transition: .5s ;
+    opacity: 0;
+
+}
+#team div.team-member:hover .team-overlay{
+ height: 100%;
+ opacity: 0.9;
+}
+ #team .team-info{
+      width: 100%;
+      height: 100%;
+  color: white;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  }
+#team .social-media i{
+    color: white;
+    font-size: 14px;
+}
+/* work section */
+.Works{
+    background-color: #636363;
+}
+.Works .smallFont h4{
+    font-size: 14px;
+    font-weight: 800;
+    }
+.Works ul{
+ list-style: none;
+ line-height: 35px;
+ padding-left: 0;
+}
+/* pricing */
+.pricing .offer h2{
+    font-size: 4rem;
+    font-weight: 500;
+    position: relative;
+}
+.pricing .offer h2::before{
+    content: "$";
+position: absolute;
+   font-size: 1.25rem;
+   top: 5px;
+   transform: translate(-50%, -50%);
+}
+.pricing .offer .Offer-body{
+    line-height: 3rem;
+}
+.pricing .Offer-body button{
+background-color: var(--main-color);
+color:white;
+transition: all .5s;
+}
+.pricing .Offer-body button:hover{
+transform: translateY(-2px);
+}
+.pricing .shadow-anim{
+box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.096);
+transition: all 0.5s;
+}
+.pricing .shadow-anim:hover{
+box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.466);
+}
+.pricing .Zoom-in{
+transform: scale(1.1);
+}
+/* Feedback */
+.Feedback .carousel-item img{
+    width: 100px;
+    height: 100px;
+    transform: translateY(40%);
+
+}
+.Feedback .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+}
+.Feedback  .carousel-control-prev i{
+    transition: all .5s;
+    color: black;
+}
+.Feedback  .carousel-control-next i{
+transition: all .5s;
+color: black;
+}
+.Feedback  .carousel-control-prev:hover i{
+ transform: translateX(-10px);
+ color: var(--main-color);
+}
+.Feedback  .carousel-control-next:hover i{
+ transform: translateX(10px);
+ color: var(--main-color);
+}
+.Feedback .container{
+    width: 70%;
+   
+}
+@media screen and (max-width:789px) {
+.pricing .Zoom-in{
+    transform: scale(1);
+}    
+}
